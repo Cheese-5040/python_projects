@@ -16,6 +16,13 @@ from pprint import pprint
 from pymongo import MongoClient #import the client from backend
 from bson.json_util import dumps
 
+##############################
+# "employeeId","itemId","amount","type", "district","category","price","storeId"
+#this algo will calculate the price of the product given the above parameters
+#in addition, it will feed the data back to predict the price of the product
+#made by Chee Seng, 15/4/2021 for HackUST
+##############################
+
 def get_data():
     global babi
     client= MongoClient('mongodb+srv://steven:steven1234@cluster0.nqvov.mongodb.net/test?authSource=admin&replicaSet=atlas-116n91-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true')
